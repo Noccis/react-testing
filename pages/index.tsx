@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header>
-        <h3>Här är headern</h3>
+        <h3>Testing with jest.</h3>
       </header>
 
       <main>
