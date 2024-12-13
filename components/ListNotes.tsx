@@ -8,7 +8,7 @@ export default function ListNotes({
 }) {
   return (
     <div className={styles.notesList}>
-      <h2 className={styles.listTitle}>Notes List</h2>
+      <h2 className={styles.listTitle}>Kom ihåg lista:</h2>
       <ul className={styles.noteList}>
         {notes.map((note, index) => (
           <li key={index} className={styles.noteItem}>

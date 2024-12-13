@@ -21,7 +21,7 @@ import styles from "@/pages/index.module.css";
 
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
-      <h2 className={styles.h2}>Add a New Note</h2>
+      <h2 className={styles.h2}>Lägg till:</h2>
       <div>
         <label className={`${styles.label} ${styles.flex}`}>
           Title:

@@ -17,8 +17,7 @@ export default function NotesPage() {
   return (
     <div className={styles.flexColumn}>
       <Header />
-      <h1>Notes Manager</h1>
-      <div className={styles.flexRow}>
+      <div className={styles.notesContainer}>
         <AddNoteForm onAddNote={addNote} />
         <ListNotes notes={notes} />
       </div>
