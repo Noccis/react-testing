@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./AddNoteForm.module.css"; // Importera din CSS-modul
+import styles from "./AddNoteForm.module.css"; 
 
 export default function AddNoteForm({ onAddNote }: { onAddNote: (note: { title: string; description: string }) => void }) {
   const [title, setTitle] = useState("");
@@ -14,17 +14,12 @@ export default function AddNoteForm({ onAddNote }: { onAddNote: (note: { title: 
     }
   };
 
-  /*
-import styles from "@/pages/index.module.css";
-`${styles.nav} ${styles.flex}`
-*/
-
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <h2 className={styles.h2}>Lägg till:</h2>
       <div>
         <label className={`${styles.label} ${styles.flex}`}>
-          Title:
+          Titel:
           <input
             className={styles.input}
             type="text"
@@ -36,7 +31,7 @@ import styles from "@/pages/index.module.css";
       </div>
       <div>
         <label className={`${styles.label} ${styles.flex}`}>
-          Description:
+          Text:
           <textarea
             className={styles.textarea}
             value={description}
@@ -46,7 +41,7 @@ import styles from "@/pages/index.module.css";
         </label>
       </div>
       <button className={styles.button}
-      type="submit">Add Note</button>
+      type="submit">Klar!</button>
     </form>
   );
 }
