@@ -1,13 +1,13 @@
+import Header from "@/components/Header";
 import styles from "@/pages/index.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <header>
-        <h3>Här är headern</h3>
-      </header>
+      <Header />
 
       <main>
+
         <h1>Här är main</h1>
       </main>
 
