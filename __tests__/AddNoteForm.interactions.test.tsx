@@ -6,12 +6,14 @@ describe("AddNoteForm Interactions", () => {
     const mockOnAddNote = jest.fn();
     render(<AddNoteForm onAddNote={mockOnAddNote} />);
 
-    const titleInput = screen.getByLabelText(/Title:/i);
-    const descriptionInput = screen.getByLabelText(/Description:/i);
+    const titleInput = screen.getByLabelText(/Titel:/i);
+    const descriptionInput = screen.getByLabelText(/Text:/i);
     const submitButton = screen.getByText(/Klar!/i);
 
     fireEvent.change(titleInput, { target: { value: "Test Title" } });
-    fireEvent.change(descriptionInput, { target: { value: "Test Description" } });
+    fireEvent.change(descriptionInput, {
+      target: { value: "Test Description" },
+    });
     fireEvent.click(submitButton);
 
     expect(mockOnAddNote).toHaveBeenCalledWith({

@@ -8,12 +8,9 @@ export default function Home() {
 
       <main>
 
-        <h1>Här är main</h1>
+        <h1>Välkommen!</h1>
+        <p>Jag vet att den här hemsidan ser tråkig ut men det är för att jag bara skapade den för att skriva tester...</p>
       </main>
-
-      <footer className={styles.footer}>
-        <p>Här är footer</p>
-      </footer>
     </div>
   );
 }

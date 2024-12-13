@@ -19,7 +19,7 @@ export default function AddNoteForm({ onAddNote }: { onAddNote: (note: { title: 
       <h2 className={styles.h2}>Lägg till:</h2>
       <div>
         <label className={`${styles.label} ${styles.flex}`}>
-          Title:
+          Titel:
           <input
             className={styles.input}
             type="text"
@@ -31,7 +31,7 @@ export default function AddNoteForm({ onAddNote }: { onAddNote: (note: { title: 
       </div>
       <div>
         <label className={`${styles.label} ${styles.flex}`}>
-          Description:
+          Text:
           <textarea
             className={styles.textarea}
             value={description}
