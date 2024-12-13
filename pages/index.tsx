@@ -1,13 +1,13 @@
+import Header from "@/components/Header";
 import styles from "@/pages/index.module.css";
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <header>
-        <h3>Testing with jest.</h3>
-      </header>
+      <Header />
 
       <main>
+
         <h1>Här är main</h1>
       </main>
 
